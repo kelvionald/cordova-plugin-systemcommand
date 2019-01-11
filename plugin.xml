@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-systemcommand" version="0.1.1" xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>System command</name>
+    <author>Kelvionald</author>
+    <description>Executor system commands.</description>
+    <keywords>cordova, detection, system, command</keywords>
+    <license></license>
+    <repo>https://github.com/kelvionald/cordova-plugin-systemcommand</repo>
+    <issue>https://github.com/kelvionald/cordova-plugin-systemcommand/issues</issue>
+    <engines>
+        <engine name="cordova" version="&gt;=3.0.0"/>
+    </engines>
+    <js-module name="SystemCommand" src="www/systemcommand.js">
+        <clobbers target="systemcommand"/>
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="SystemCommand">
+                <param name="android-package" value="kelvin.SystemCommand"/>
+                <param name="onload" value="true"/>
+            </feature>
+        </config-file>
+        <source-file src="src/android/SystemCommand.java" target-dir="src/kelvin"/>
+    </platform>
+</plugin>
