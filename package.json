@@ -28,9 +28,13 @@
     }
   ],
   "author": "Kelvionald (nlix.ru)",
-  "license": "",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/kelvionald/cordova-plugin-systemcommand/issues"
   },
-  "homepage": "https://github.com/kelvionald/cordova-plugin-systemcommand"
+  "homepage": "https://github.com/kelvionald/cordova-plugin-systemcommand",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
 }
